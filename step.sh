@@ -3,7 +3,7 @@
 if [ -n "${push}" -a "${push}" == "true" -o "${push}" == "false" ]
 then
     tag_number=$(($tag + $tag_offset))
-    git tag -a ${tag_number} -m '${tag_message}'
+    git tag -a ${tag_number} -m "${tag_message}"
     if [ "${push}" == "true" ]; then
         git push --follow-tags
     fi
