@@ -1,9 +1,9 @@
-title: "Git tag"
+title: "Git tag [Shortcut edition]"
 summary: A simple step that create a tag to the current commit
 description: A simple step that create a tag to the current commit
-website: https://github.com/Itelios/bitrise-steps-git-tag
-source_code_url: https://github.com/Itelios/bitrise-steps-git-tag
-support_url: https://github.com/Itelios/bitrise-steps-git-tag/issues
+website: https://github.com/shortcut/bitrise-steps-git-tag
+source_code_url: https://github.com/shortcut/bitrise-steps-git-tag
+support_url: https://github.com/shortcut/bitrise-steps-git-tag/issues
 host_os_tags:
   - osx-10.10
 type_tags:
@@ -32,4 +32,9 @@ inputs:
       is_required: true
       is_dont_change_value: true
       value_options: ["true", "false"]
+  - tag_offset:
+    opts:
+      title: "Set the build offset number"
+      is_expand: true
+      is_required: false
       
