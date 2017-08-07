@@ -5,7 +5,7 @@ then
     tag_number=$(($tag + $tag_offset))
     git tag -a ${tag_number} -m "${tag_message}"
     if [ "${push}" == "true" ]; then
-        git push --follow-tags
+        git push --tags
     fi
     if (( $? )); then
         echo "Failure" >&2
